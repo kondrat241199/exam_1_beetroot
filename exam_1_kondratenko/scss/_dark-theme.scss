@@ -1,0 +1,105 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $fc-main-dark;
+    background-color: #161926;
+  }
+  .highlighted-text {
+    color: $fc-span-dark;
+  }
+  .button {
+    color: $fc-btn-dark;
+  }
+  .button:hover {
+    color: #02e0ab;
+  }
+  .button::after {
+    background-color: #53f3cd;
+  }
+  .button:hover::after {
+    background-color: #02e0ab;
+  }
+
+  .item-right {
+    background-color: $bg-color-dark;
+  }
+
+  .header {
+    background: linear-gradient(
+        270deg,
+        rgba(22, 25, 38, 0.5) 0%,
+        rgba(22, 25, 38, 0) 24.1%,
+        rgba(22, 25, 38, 0) 47.19%
+      ),
+      rgba(22, 25, 38, 0.02);
+  }
+
+  .nav {
+    &__item:hover::before {
+      background: linear-gradient(
+        96.73deg,
+        #53f3cd 6.73%,
+        rgba(83, 243, 205, 0) 116.9%
+      );
+    }
+
+    &__link {
+      color: $fc-main-dark;
+    }
+  }
+
+  .banner {
+    background: url(../img/dark/first-screen-black.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 1028px;
+  }
+
+  .quote {
+    &__text::before {
+      content: url(../img/svg/quote-icon-dark.svg);
+    }
+  }
+
+  .benefits {
+    &__item::before {
+      background-color: #515773;
+    }
+  }
+
+  .video {
+    &__border {
+      border-color: $color-video-border-dark;
+    }
+    *::before {
+      border-color: $color-video-border-dark;
+    }
+    *::after {
+      border-color: $color-video-border-dark;
+    }
+  }
+
+  .contact {
+    &__form {
+      color: $fc-main-dark;
+    }
+  }
+
+  .form {
+    &__input {
+      color: $fc-main-dark;
+      border-bottom: 1px solid $fc-main-dark;
+    }
+  }
+
+  .design {
+    &__company {
+      color: $fc-main-dark;
+    }
+  }
+
+  .agreement {
+    &__link {
+      color: $fc-main-dark;
+    }
+  }
+}

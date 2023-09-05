@@ -1,0 +1,162 @@
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .img-left {
+    width: 100%;
+    max-width: 400px;
+  }
+  .item-right {
+    grid-template-columns: repeat(2, 270px);
+    padding: 15px 15px;
+  }
+
+  .info {
+    &__img {
+      top: 47%;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    &__dollar::before {
+      font-size: 18px;
+    }
+
+    &__numbers {
+      margin-top: 20%;
+    }
+
+    &__item-right {
+      top: 50%;
+    }
+  }
+
+  .numbers {
+    &__sub-after {
+      padding-top: 5%;
+      font-size: 16px;
+    }
+
+    &__sub-after::after {
+      top: 15%;
+    }
+  }
+
+  .benefits {
+    margin-top: 10%;
+    &__list {
+      grid-template-columns: none;
+      grid-template-rows: repeat(4, 150px);
+    }
+
+    &__item {
+      padding-top: 30px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .quote {
+    &__text {
+      font-size: 25px;
+    }
+
+    &__img__text {
+      top: 10%;
+      left: 18%;
+      transform: none;
+    }
+  }
+
+  .video {
+    *::before {
+      top: 35%;
+      left: 7%;
+    }
+
+    *::after {
+      top: 33%;
+      right: 6%;
+    }
+    &__border {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    &__screen {
+      width: 570px;
+      height: 360px;
+    }
+
+    &__description {
+      margin-left: 3%;
+    }
+  }
+
+  .promises {
+    margin-top: 15%;
+    &__right {
+      max-width: 530px;
+      width: 100%;
+      top: 8%;
+      right: 10%;
+    }
+  }
+  .reviews {
+    &__item {
+      margin-bottom: 2%;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .contact {
+    max-width: 700px;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    &__content,
+    &__form {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+  .footer {
+    &__content {
+      padding-bottom: 2%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
